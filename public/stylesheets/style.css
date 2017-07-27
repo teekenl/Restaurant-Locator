@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+
+.snip1336 {
+  border-radius:3px;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  top:10px;
+  left:10px;
+  margin-top:10px;
+  margin-left:7px;
+  width: 350px;
+  height: 480px;
+  color: #000000;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px 5px rgba(161,161,161,0.3);
+
+}
+.snip1336 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1336 img {
+  width: 100%;
+  height: 40%;
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.snip1336 figcaption {
+  width: 100%;
+  height: 62%;
+  background-color: #FFFFFF;
+  padding: 25px;
+  position: relative;
+}
+
+
+.snip1336 figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #FFFFFF;
+}
+
+.snip1336 figcaption a {
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5%;
+  cursor:pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 5px;
+  border: 2px solid #000000;
+  color: #000000;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 35%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.snip1336 figcaption a:hover {
+  opacity: 1;
+}
+
+.snip1336 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  opacity: 1;
+  height:80px;
+  width: 80px;
+  background-color: #2980b9;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#rating {
+  color: #FFFFFF;
+  position:absolute;
+  top:25px;
+  left:13px;
+  font-size: 2em;
+}
+
+#sub-rating {
+
+  font-size: 0.5em;
+}
+.snip1336 .info {
+  margin-left: 45%;
+}
+.snip1336 .follow {
+  margin-left: 5%;
+  margin-right: 4%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+
+.snip1336 h2 {
+  margin: 0 0 5px;
+  font-size:2em;
+  font-weight: 500;
+}
+.snip1336 h2 span {
+  display: block;
+  font-size: 0.7em;
+  color: #2980b9;
+}
+.snip1336 p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}

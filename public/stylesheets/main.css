@@ -1,0 +1,259 @@
+.main {
+    box-shadow: 0px 0px 57px 30px rgba(161,161,161,0.3);
+    position:relative;
+    margin: auto;
+    border: 1px solid #ffffff;
+    width: 1200px;
+    height:400px;
+    border-radius: 5px;
+}
+#search-prompt:focus {
+    border: 2px solid #4d90fe;
+}
+
+#Direction {
+    width: 400px;
+    height: 250px;
+    overflow: auto;
+}
+#weather {
+    font-weight: bold;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin-right: 60px;
+}
+
+#alertmessage2 {
+    display: none;
+    z-index: 2000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#alertmessage3 {
+    display: none;
+    z-index: 2000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.ui.negative.message {
+    display: none;
+}
+
+
+#alertmessage {
+    display: none;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ui.big.message {
+    position: inherit;
+    top: 100px;
+    left: 100px;
+    max-width: 80%;
+    background-color: transparent;
+    border-width: 0px;
+    color:#767676;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.ui.negative.message {
+    position: fixed;
+    top:25%;
+    width: 80%;
+    left:10%;
+    z-index:2000;
+
+}
+
+#current_location {
+    position: absolute;
+    left: 40px;
+    font-size: 1em;
+    color:#000;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#map-modal {
+    display:block;
+    z-index: 1000;
+    left:0;
+    top:0;
+    width: 100%;
+    margin-left: -2000px;
+    height: 100%;
+    position:fixed;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+#container_modal {
+    border-radius: 5px;
+    z-index:5;
+    border: none;
+    margin:auto;
+    width: 800px;
+    height:400px;
+    box-shadow: 0px -1px 21px 1px rgba(161,161,161,0.3);
+    background: #ffffff;
+}
+#main-container {
+    z-index:6;
+    border:none;
+    margin:auto;
+    width:100%;
+    height:90%;
+}
+
+#map-canvas {
+
+    float: left;
+    margin-left: 22px;
+    margin-top: 13px;
+    width: 40%;
+    height:80%;
+}
+
+#map-header {
+    font-weight: bolder;
+    margin:20px;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size:2em;
+    padding:15px;
+    border-bottom: 1px solid #717579;
+}
+
+#map-modal-info {
+    float:left;
+    margin-left: 10px;
+    width:50%;
+}
+
+
+.top_panel {
+
+    text-align: center;
+    margin-left: 35px;
+    width: 400px;
+
+}
+
+#closebutton {
+    cursor: pointer;
+}
+
+#closebutton:hover {
+    cursor: pointer;
+    color:#ffffff;
+}
+
+#inline_menu {
+    position: absolute;
+    right: 50px;
+    margin-top: 5px;
+}
+
+#result_container {
+    box-shadow: 0px -1px 21px 1px rgba(161,161,161,0.3);
+    position:relative;
+    margin: auto;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    width: 1200px;
+    height:5500px;
+    border-radius: 5px;
+}
+
+
+div  .ui.icon.input {
+    width: 25%;
+
+}
+
+.search {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.ui.header {
+    z-index:10;
+    text-align: center;
+}
+
+ul.maptab {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+
+}
+
+/* Float the list items side by side */
+ul.maptab li {float: left;}
+
+#walkingmargin {
+    margin-left: -40px;
+}
+
+/* Style the links inside the list items */
+ul.maptab li a {
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+
+}
+
+/* Change background color of links on hover */
+ul.maptab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.maptab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
